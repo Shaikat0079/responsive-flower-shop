@@ -115,6 +115,24 @@ header button,.deal-details button {
     gap: 20px;
 }
 
+.instagram{
+    text-align: center;
+}
+
+.instagram p{
+    margin: 30px 0;
+}
+
+.insta-images img{
+    height: 300px;
+}
+
+.insta-images{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
 /*  */
 
 @media screen and (max-width: 576px) {
@@ -129,7 +147,7 @@ header button,.deal-details button {
     gap: 30px;
   }
   .flower-link {
-    width: 340px;
+    width: 300px;
   }
   .support {
     padding: 50px 0;
@@ -155,5 +173,15 @@ header button,.deal-details button {
   }
   .deal img{
     height: 240px;
+  }
+  .insta-images{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 20px auto;
+  }
+  .insta-images img{
+    height: 240px;
+    width: 200px;
   }
 }
