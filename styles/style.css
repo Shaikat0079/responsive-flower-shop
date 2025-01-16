@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
 }
-span{
-    color: #e55473;
+span {
+  color: #e55473;
 }
 .lato-regular {
   font-family: "Lato", serif;
@@ -29,7 +29,9 @@ header p {
   margin: 20px 0;
 }
 
-header button,.deal-details button {
+header button,
+.deal-details button,
+.deals-banner input[type='submit'] {
   background-color: #e55473;
   padding: 10px 20px;
   color: white;
@@ -98,40 +100,83 @@ header button,.deal-details button {
   justify-content: space-evenly;
 }
 
-.deal{
-    display: flex;
-    background-color:  #c9566f20;
-    padding: 60px;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 50px;
-    gap: 100px;
+.deal {
+  display: flex;
+  background-color: #c9566f20;
+  padding: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+  gap: 100px;
 }
-.deal-details{
+.deal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.instagram {
+  text-align: center;
+}
+
+.instagram p {
+  margin: 30px 0;
+}
+
+.insta-images img {
+  height: 300px;
+}
+
+.insta-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.deals-banner {
+  background-image: url("../assets/Rectangle\ 9.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px auto;
+}
+.deals-banner article {
+  margin: 140px 0;
+}
+
+.deals-banner article p{
+    margin: 5px 0;
+}
+.deals-banner input[type="email"] {
+    padding: 10px 0;
+    padding-left: 10px;
+    padding-right: 200px;
+    border: none; 
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+footer{
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+}
+
+.footer-texts{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 20px;
-}
-
-.instagram{
-    text-align: center;
-}
-
-.instagram p{
-    margin: 30px 0;
-}
-
-.insta-images img{
-    height: 300px;
-}
-
-.insta-images{
-    display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-}
+    margin: auto 20px;
+  }
 
 /*  */
 
@@ -168,20 +213,25 @@ header button,.deal-details button {
     flex-direction: column;
     align-items: center;
   }
-  .deal{
+  .deal {
     flex-direction: column;
   }
-  .deal img{
+  .deal img {
     height: 240px;
   }
-  .insta-images{
+  .insta-images {
     flex-direction: column;
     gap: 30px;
     align-items: center;
     margin: 20px auto;
   }
-  .insta-images img{
+  .insta-images img {
     height: 240px;
     width: 200px;
   }
+  .deals-banner input[type="email"]{
+    margin: 10px 0;
+    padding-right: 100px;
+  }
+
 }
