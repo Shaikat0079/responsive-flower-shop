@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+span{
+    color: #e55473;
+}
 .lato-regular {
   font-family: "Lato", serif;
   font-weight: 400;
@@ -27,7 +29,7 @@ header p {
   margin: 20px 0;
 }
 
-header button {
+header button,.deal-details button {
   background-color: #e55473;
   padding: 10px 20px;
   color: white;
@@ -95,6 +97,24 @@ header button {
   gap: 20px;
   justify-content: space-evenly;
 }
+
+.deal{
+    display: flex;
+    background-color:  #c9566f20;
+    padding: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+    gap: 100px;
+}
+.deal-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
 /*  */
 
 @media screen and (max-width: 576px) {
@@ -129,5 +149,11 @@ header button {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .deal{
+    flex-direction: column;
+  }
+  .deal img{
+    height: 240px;
   }
 }
